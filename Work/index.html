@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop.com</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-white text-black">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/"><b>Shop.Com</a></b>
+                </li>
+            </ul><a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                <i class="fa fa-shopping-cart" style="font-size:36px"></i></a>
+        </div>
+    </nav>
+
+    <div class="container-fluid pd-3 mt-5 mx-auto ">
+        <div class="row mx-auto  pd-5  d-flex justify-content-center flex-nowrap ">
+            <div class="=col-12 col-sm-6 col-md-3 pd-2">
+                <div class="card" style="width:225px">
+                    <img class="card-img-top" src="Images/img1.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy S22 Ultra</h5>
+                        <p id="price"><b>Price : Rs 109999/- </b>
+                        </p>
+                        <p class="card-text">
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="additem('Samsung Galaxy S22 Ultra',109999,'img1.png')"  data-bs-toggle="modal" data-bs-target="#myModal">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="=col-12 col-sm-6 col-md-3 pd-2">
+
+                <div class="card" style="width:225px">
+                    <img class="card-img-top" src="Images/img2.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Apple iphone 13 Pro</h5>
+                        <p id="price"><b>Price : Rs 129999/- </b>
+                        </p>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary"  onclick="additem('Apple iphone 13 Pro',129999,'img2.png')" data-bs-toggle="modal" data-bs-target="#myModal">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="=col-12 col-sm-6 col-md-3 pd-2">
+                <div class="card" style="width:225px">
+                    <img class="card-img-top" src="Images/img3.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Realme 9 Pro+</h5>
+                        <p id="price"><b>Price : Rs 24999/- </b></p>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary" onclick="additem('Realme 9 Pro+',24999,'img3.png')" data-bs-toggle="modal" data-bs-target="#myModal">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="=col-12 col-sm-6 col-md-3 pd-2">
+                <div class="card" style="width:225px">
+                    <img class="card-img-top" src="Images/img4.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Redmi Note 11</h5>
+                        <p id="price"><b>Price : Rs 18999/- </b></p>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary" onclick="additem('Redmi Note 11',18999,'img4.png')" data-bs-toggle="modal" data-bs-target="#myModal">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row mx-auto  pd-5 mt-5 ">
+            <div class="=col-12 col-sm-6 col-md-3 pd-2">
+                <div class="card" style="width:225px">
+                    <img class="card-img-top" src="Images/img5.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Poco x3</h5>
+                        <p id="price"><b>Price : Rs 21999/- </b></p>
+                        <p class="card-text">
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="additem('Poco x3',21999,'img5.png')" data-bs-toggle="modal" data-bs-target="#myModal">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="=col-12 col-sm-6 col-md-3 pd-2">
+
+                <div class="card" style="width:225px">
+                    <img class="card-img-top" src="Images/img6.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Google Pixel 6</h5>
+                        <p id="price"><b>Price : Rs 59999/- </b></p>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary" onclick="additem('Google Pixel 6',59999,'img6.png')" data-bs-toggle="modal" data-bs-target="#myModal">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="=col-12 col-sm-6 col-md-3 pd-2">
+                <div class="card" style="width:225px">
+                    <img class="card-img-top" src="Images/img7.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Oneplus Nord 2</h5>
+                        <p id="price"><b>Price : Rs 22999/- </b></p>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary" onclick="additem('Oneplus Nord 2',22999,'img7.png')" data-bs-toggle="modal" data-bs-target="#myModal">Add to
+                            Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="=col-12 col-sm-6 col-md-3 pd-2">
+                <div class="card" style="width:225px">
+                    <img class="card-img-top" src="Images/img8.png" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">Vivo Y33</h5>
+                        <p id="price"><b>Price : Rs 23999/- </b></p>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary" onclick="additem('Vivo Y33',23999,'img8.png')" data-bs-toggle="modal"
+                            data-bs-target="#myModal">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 p-4 bg-dark text-white text-center">
+        <p>Visit Shop.com and Enjoy Shopping...</p>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Your Cart</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div>
+                        <table class="table-bordered text-center" id="one" style="width: 100%;">
+                            <tr>
+                                <th>Item</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </table>
+                        
+
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function additem(name,price,image) {
+            document.getElementById("one").innerHTML+="<tr>"+
+                                "<td><img src='Images/"+image+"' style='width:50px;height:50px' ></td>"+
+                                `<td>${name}</td>`+
+                                `<td>${price}</td>`+
+                                "<td>1</td>"+
+                                `<td>${price}</td>`+
+                            "</tr>"
+        }
+
+    </script>
+</body>
+
+</html>
